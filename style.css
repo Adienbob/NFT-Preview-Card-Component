@@ -1,0 +1,152 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-dark-blue: hsl(217, 54%, 11%);
+    --card-dark-blue: hsl(216, 50%, 16%);
+    --line-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 16px;
+    --family: "Outfit", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    font-family: var(--family);
+    background-color: var(--main-dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--card-dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 290px;
+}
+
+.main {
+    width: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 18px;
+    padding: 15px 0px;
+}
+
+p:first-of-type {
+    color: var(--Soft-blue);
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.ethere {
+    float: left;
+}
+
+.clock {
+    position: absolute;
+    float: left;
+    padding-left: 160px;
+    margin-top: 2px;
+}
+
+div {
+    font-size: 12px;
+}
+
+div p {
+    display: inline-block;
+    color: var(--Cyan) !important;
+    font-weight: 500;
+    padding: 0px 0px 0px 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+div span {
+    color: var(--Soft-blue);
+    padding-left: 110px;
+}
+
+hr {
+    border: 1px solid var(--line-dark-blue);
+}
+
+.avatar {
+    float: left;
+    width: 25px;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section p:last-child {
+    color: var(--Soft-blue);
+    margin-top: 15px;
+    margin-left: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+section p span {
+    color: white;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    section {
+        width: 390px;
+    }
+
+    .main {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p:first-of-type {
+        font-size: 22px;
+    }
+
+    .ethere {
+        width: 16px;
+    }
+
+    .clock {
+        padding-left: 210x;
+        width: 185px;
+        margin-left: 35px;
+    }
+
+    div p {
+        font-size: 12px;
+    }
+
+    div span {
+        font-size: 22px;
+        padding-left: 120px;
+    }
+}
